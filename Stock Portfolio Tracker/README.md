@@ -1,217 +1,158 @@
-📈 Advanced Stock Portfolio Tracker
+# Advanced Stock Portfolio Tracker
 
-A modern, intuitive, and analytics-driven stock portfolio management application built with Python and Streamlit. This tool helps users track real-time stock performance, analyze portfolio metrics, manage holdings, and visualize gains through beautifully designed charts and dashboards.
+📈 Smart, simple, and analytics-driven stock portfolio manager built with Python and Streamlit.
 
-⭐ Features
-📊 Real-Time Portfolio Tracking
+A lightweight Streamlit app to track holdings, view real-time prices (via yFinance), analyze portfolio performance, and export data. Designed for personal use, learning, and small-scale portfolio monitoring.
 
-Live stock prices via Yahoo Finance
+---
 
-Auto-calculated gain/loss
+## Table of contents
+- [Features](#features)
+- [Demo / Screenshots](#demo--screenshots)
+- [Tech stack](#tech-stack)
+- [Requirements](#requirements)
+- [Install & Run](#install--run)
+- [Quick start](#quick-start)
+- [Usage](#usage)
+- [Project structure](#project-structure)
+- [Data & reliability notes](#data--reliability-notes)
+- [Development](#development)
+- [Contributing](#contributing)
+- [License & Acknowledgements](#license--acknowledgements)
+- [Contact](#contact)
 
-Total value, cost basis & performance metrics
+---
 
-➕ Portfolio Management
+## Features
+- Real-time price lookup using yFinance
+- Auto-calculated portfolio metrics: total value, cost basis, gain/loss (amount and %)
+- Add / remove (sell) holdings; supports partial sells and automatic average-price recalculation
+- Transaction history with timestamps and color-coded BUY/SELL entries
+- Interactive charts:
+  - Portfolio value over selectable ranges (1W, 1M, 3M, 6M, 1Y, All)
+  - Allocation donut chart
+  - Gain/Loss comparison bar chart
+- Export portfolio and transactions to CSV or JSON
+- Clean Streamlit layout with Plotly charts and custom styling
 
-Add stocks with symbol, quantity, purchase price
+---
 
-Remove/sell holdings fully or partially
+## Demo / Screenshots
+(Replace these with actual screenshots in the repo)
+- Overview dashboard with portfolio value chart
+- Holdings table with current value and gain %
+- Transaction history and export panel
 
-Automatic average price recalculation
+---
 
-Tracks purchase history & timestamps
+## Tech stack
+- Frontend: Streamlit
+- Language: Python 3.8+
+- Charts: Plotly (graph_objects / express)
+- Data: yFinance
+- Data handling: pandas, numpy
+- Session storage: Streamlit session_state
 
-📈 Visual Performance Analytics
+---
 
-Portfolio value chart (1W, 1M, 3M, 6M, 1Y, All)
+## Requirements
+- Python 3.8 or higher
+- Internet connection (for fetching live prices)
 
-Allocation donut chart
-
-Gain/Loss comparison bar graph
-
-Mini progress bars for stock allocation
-
-🔄 Transaction History
-
-Fully detailed BUY/SELL logs
-
-Time-stamped entries
-
-Color-coded actions
-
-Summary: Buy/Sell ratio, total volume
-
-📤 Data Export
-
-Export portfolio to CSV
-
-Export full portfolio + transactions to JSON
-
-One-click download from sidebar
-
-🎨 Streamlit UI/UX Enhancements
-
-Clean responsive layout with custom CSS
-
-Organized sidebar for quick actions
-
-Tab-based navigation (Overview, Performance, Holdings, Transactions)
-
-Smooth charts using Plotly
-
-🛠️ Tech Stack
-Component	Technology
-Frontend	Streamlit
-Backend	Python 3.x
-Charts	Plotly (Graph Objects + Express)
-Data Source	yFinance
-Processing	Pandas, NumPy
-State Storage	Streamlit Session State
-📦 Installation
-✔ Requirements
-
-Python 3.8+
-
-pip package manager
-
-Internet connection (for live stock prices)
-
-✔ Install Dependencies
+Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 
-✔ Run the App
+---
+
+## Install & Run
+1. Clone the repo:
+```bash
+git clone https://github.com/Vishal710-max/Code-Alpha-Tasks.git
+cd "Code-Alpha-Tasks/Stock Portfolio Tracker"
+```
+
+2. Install:
+```bash
+python -m venv .venv        # optional but recommended
+source .venv/bin/activate   # or .venv\Scripts\activate on Windows
+pip install -r requirements.txt
+```
+
+3. Run:
+```bash
 streamlit run main.py
+```
 
-✔ Access the App
+Visit http://localhost:8501
 
-Visit:
+---
 
-http://localhost:8501
+## Quick start
+- Add a new holding: enter symbol (e.g., AAPL), quantity, optional purchase price → Add to Portfolio
+- Remove / Sell: choose a holding and quantity → Remove from Portfolio (partial sells supported)
+- View charts: switch between Overview, Performance, Holdings, Transactions tabs in the sidebar
+- Export: choose CSV or JSON and click Download
 
-🚀 Usage Guide
-➕ Add Stocks
+---
 
-Enter stock symbol (AAPL, TSLA, etc.)
+## Usage notes
+- If purchase price is omitted, the app uses current market price as cost basis (you can adjust later)
+- The app stores data in Streamlit's session_state for the current session — closing the browser or restarting the app will reset data unless you export it
+- Exporting transaction history preserves timestamps and actions for audit
 
-Enter quantity
+---
 
-Optional: purchase price
-
-Click Add to Portfolio
-
-➖ Remove/Sell Stocks
-
-Select a stock
-
-Enter quantity
-
-Click Remove from Portfolio
-
-📊 View Performance
-
-Explore charts under Portfolio Overview
-
-Switch time periods (1W–1Y)
-
-Analyze gain/loss across stocks
-
-📋 View Holdings
-
-Detailed table with:
-
-Avg price
-
-Current value
-
-Cost basis
-
-Gain %
-
-Gain/Loss amount
-
-🔄 View Transactions
-
-Full BUY/SELL history
-
-Color-coded action column
-
-Summary metrics
-
-📤 Export Data
-
-Choose CSV or JSON
-
-Download with one click
-
-🗂️ Project Structure
+## Project structure
 stock-portfolio-tracker/
-│
-├── main.py               # Main Streamlit application
-├── README.md             # Project documentation
-└── requirements.txt      # Dependencies
+- main.py               # Streamlit app entrypoint
+- README.md             # This file
+- requirements.txt      # Python dependencies
+- src/                  # (optional) helper modules
+- assets/               # (optional) images and CSS
 
-🔒 Reliability & Data Handling
+Adjust paths according to existing repository layout.
 
-Fallback default prices if API fails
+---
 
-Prevents invalid quantity removal
+## Data & reliability
+- Uses yFinance for market data; service outages or network failures may cause temporary unavailability
+- The app includes fallback handling for missing data where possible, and prevents invalid operations (e.g., removing more quantity than owned)
+- Prices are real-time but not suitable for trading decisions — use official broker quotes for execution
 
-Clean formatting for currency values
+---
 
-Session-based storage (no external database needed)
+## Development
+- Recommended: create a feature branch for changes
+- Add tests where appropriate
+- Linting & formatting: use black / flake8 (optional)
+- To add new features (e.g., persistent storage, trading API integration), follow the existing module structure and submit a PR
 
-🎨 UI & Styling
+---
 
-Custom CSS for headings, cards, colors
+## Contributing
+Contributions are welcome:
+1. Fork the repository
+2. Create a feature branch: git checkout -b feature/your-feature
+3. Commit changes and open a pull request
+4. Provide clear description and testing instructions
 
-Minimalistic, professional interface
+Please include descriptive commit messages and small focused PRs for faster review.
 
-Hoverable charts with smooth animations
+---
 
-Wide layout for better analytics experience
+## License & Acknowledgements
+- This project is free for personal and educational use.
+- Acknowledgements:
+  - Streamlit — UI framework
+  - yFinance — market data
+  - Plotly — visualizations
+  - pandas / NumPy — data processing
 
-📝 Future Improvements
+---
 
-Daily portfolio history saving
+## Contact
+Created by Vishal (Vishal710-max). For questions or suggestions, open an issue or a pull request in this repo.
 
-Integration with real trading APIs
-
-Advanced analytics (volatility, Sharpe ratio)
-
-Dark mode
-
-Sector analysis
-
-Push notifications for price alerts
-
-🤝 Contributing
-
-Contributions are welcome!
-
-Fork the repository
-
-Create a feature branch
-
-Commit changes
-
-Open a pull request
-
-📄 License
-
-This project is free for personal and educational use.
-
-🙏 Acknowledgments
-
-Streamlit for UI components
-
-yFinance for market data
-
-Plotly for stunning visualizations
-
-Pandas/NumPy for data processing
-
-📈 Advanced Stock Portfolio Tracker
-
-Smart investing starts with smart tracking.
-
-
+Smart investing starts with smart tracking — enjoy!
