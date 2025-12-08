@@ -38,7 +38,58 @@ A lightweight Streamlit app to track holdings, view real-time prices (via yFinan
 ---
 
 ## Demo / Screenshots
-(Replace these with actual screenshots in the repo)
+## Screenshots
+
+Upload your images to: `Stock Portfolio Tracker/assets/images/` with these filenames:
+- `overview-dashboard.png`
+- `holdings-table.png`
+- `transactions-history.png`
+- `allocation-chart.png`
+
+Insert this section into your README (it displays a 2x2 grid of thumbnails that link to the full-size images):
+
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <a href="assets/images/overview-dashboard.png">
+          <img src="assets/images/overview-dashboard.png" alt="Overview dashboard" width="520" />
+        </a>
+      </td>
+      <td>
+        <a href="assets/images/holdings-table.png">
+          <img src="assets/images/holdings-table.png" alt="Holdings table" width="520" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Figure 1.</strong> Portfolio overview</td>
+      <td align="center"><strong>Figure 2.</strong> Holdings table</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="assets/images/transactions-history.png">
+          <img src="assets/images/transactions-history.png" alt="Transactions history" width="520" />
+        </a>
+      </td>
+      <td>
+        <a href="assets/images/allocation-chart.png">
+          <img src="assets/images/allocation-chart.png" alt="Allocation chart" width="520" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Figure 3.</strong> Transactions history</td>
+      <td align="center"><strong>Figure 4.</strong> Allocation & composition</td>
+    </tr>
+  </table>
+</div>
+
+Notes:
+- Use the relative paths above (from the README in `Stock Portfolio Tracker/`) so images render correctly on GitHub.
+- If you prefer thumbnails to save vertical space, reduce the `width` values (e.g., 300–400).
+- After uploading the images and pasting this section into README.md, commit and push to your branch; GitHub will display the images automatically.
+
 - Overview dashboard with portfolio value chart
 - Holdings table with current value and gain %
 - Transaction history and export panel
@@ -156,3 +207,4 @@ Please include descriptive commit messages and small focused PRs for faster revi
 Created by Vishal (Vishal710-max). For questions or suggestions, open an issue or a pull request in this repo.
 
 Smart investing starts with smart tracking — enjoy!
+
