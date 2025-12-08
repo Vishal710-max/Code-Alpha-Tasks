@@ -112,13 +112,6 @@ Key concepts: conditional statements (if/elif), functions, loops, user input/out
 
 ---
 
-## Tips & improvements
-- Add a `requirements.txt` where external packages are used (e.g., `requests`, `beautifulsoup4`).
-- Add small README.md inside each task folder that documents usage and example inputs.
-- Add simple example input/output files and test cases to make each project easy to try.
-
----
-
 ## Contributing
 - Fork the repo, add or improve project code, then open a pull request.
 - Keep changes small and describe how to run your code.
@@ -129,8 +122,3 @@ Key concepts: conditional statements (if/elif), functions, loops, user input/out
 Use freely for personal and educational purposes.
 
 ---
-
-If you'd like, I can:
-- create the folder structure and add starter script templates for each task, or
-- create a branch (e.g., `add/tasks-starters`) and push placeholder files + this README for you.
-Tell me which you prefer.
