@@ -34,13 +34,11 @@ Organize each task in its own folder:
 
 Code-Alpha-Tasks/
 - TASK-2-Stock-Portfolio-Tracker/
-  - stock_tracker.py
+  - main.py
   - README.md
-  - requirements.txt (optional)
+  - requirements.txt  
 - TASK-3-Task-Automation/
   - move_images.py
-  - extract_emails.py
-  - scrape_title.py
   - README.md
 - TASK-4-Basic-Chatbot/
   - chatbot.py
@@ -62,14 +60,15 @@ What it does
 - Optionally saves results to `portfolio.txt` or `portfolio.csv`.
 
 How to run (example)
-1. Create `stock_tracker.py` inside `TASK-2-Stock-Portfolio-Tracker/`.
+1. Create `main.py` inside `TASK-2-Stock-Portfolio-Tracker/`.
 2. Run:
    ```bash
-   python stock_tracker.py
+   python  main.py
    ```
 3. Follow on-screen prompts (enter symbol and quantity). The script displays totals and can write to a file.
 
 Key concepts: dictionaries, input/output, arithmetic, optional file handling.
+
 
 ---
 
