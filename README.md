@@ -82,7 +82,7 @@ Suggested scripts
 
 How to run
 ```bash
-python move_images.py src_folder dest_folder
+python task_automation.py
 ```
 
 Key concepts: os, shutil, re, requests, file handling.
