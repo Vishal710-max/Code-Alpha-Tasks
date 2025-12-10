@@ -76,7 +76,7 @@ Key concepts: dictionaries, input/output, arithmetic, optional file handling.
 Goal: Automate small, real-life repetitive tasks.  
 
 Suggested scripts
-- move_images.py — move all `.jpg` files from source folder to a target folder (uses `os`, `shutil`)
+- move all `.jpg` files from source folder to a target folder (uses `os`, `shutil`)
 - extract_emails.py — read a `.txt` file and extract emails into another file (uses `re`)
 - scrape_title.py — fetch a fixed webpage and save its `<title>` (uses `requests`, `bs4` or `re`)
 
