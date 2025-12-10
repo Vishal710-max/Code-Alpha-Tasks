@@ -38,7 +38,7 @@ Code-Alpha-Tasks/
   - README.md
   - requirements.txt  
 - TASK-3-Task-Automation/
-  - move_images.py
+  - task_automation.py
   - README.md
 - TASK-4-Basic-Chatbot/
   - chatbot.py
@@ -73,7 +73,7 @@ Key concepts: dictionaries, input/output, arithmetic, optional file handling.
 ---
 
 ## TASK 3 — Task Automation with Python Scripts
-Goal: Automate small, real-life repetitive tasks. Provide one or more scripts; pick one or more ideas below.
+Goal: Automate small, real-life repetitive tasks.  
 
 Suggested scripts
 - move_images.py — move all `.jpg` files from source folder to a target folder (uses `os`, `shutil`)
