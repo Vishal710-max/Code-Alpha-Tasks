@@ -83,8 +83,6 @@ Suggested scripts
 How to run
 ```bash
 python move_images.py src_folder dest_folder
-python extract_emails.py input.txt output_emails.txt
-python scrape_title.py https://example.com title.txt
 ```
 
 Key concepts: os, shutil, re, requests, file handling.
