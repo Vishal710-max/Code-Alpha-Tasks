@@ -7,7 +7,7 @@ Jarvis BOT provides colorful responses, interactive conversations, and a delight
 
 ## Quick Start
 
-1. Clone the repository (or download the `Jarvis BOT` folder).
+1. Clone the repository (or download the `chat Bot` folder).
 2. (Optional but recommended) Create a virtual environment:
 
    ```bash
@@ -21,60 +21,60 @@ pip install rich
 Run the chatbot:
 
 bash
-python jarvis_bot.py
+python chatbot.py
 Usage Overview
-When you run the script you'll see a welcome banner and can start chatting with Jarvis.
-Here are the main commands you can use:
+   When you run the script you'll see a welcome banner and can start chatting with Jarvis.
+   Here are the main commands you can use:
 
-Greetings
-
-Say hello, hi, or hey to start the conversation.
-
-Jarvis responds with a friendly greeting.
-
-Ask How Jarvis Is
-
-Type how are you or similar phrases.
-
-Jarvis replies with cheerful responses.
-
-Jokes
-
-Ask for a joke or something funny.
-
-Jarvis tells a random joke.
-
-Weather
-
-Ask about the weather, temperature, or forecast.
-
-Jarvis gives a fictional weather report.
-
-Time
-
-Ask for the time, clock, or hour.
-
-Jarvis shows the current system time.
-
-Quotes
-
-Request a quote, inspire, or motivation.
-
-Jarvis shares an inspirational quote.
-
-Color Theme
-
-Type color or change color.
-
-Jarvis changes the chat color theme.
-
-Help
-
-Type help to see all available commands in a table.
-
-Exit
-
-Say bye or exit to end the conversation.
+         Greetings
+         
+         Say hello, hi, or hey to start the conversation.
+         
+         Jarvis responds with a friendly greeting.
+         
+         Ask How Jarvis Is
+         
+         Type how are you or similar phrases.
+         
+         Jarvis replies with cheerful responses.
+         
+         Jokes
+         
+         Ask for a joke or something funny.
+         
+         Jarvis tells a random joke.
+         
+         Weather
+         
+         Ask about the weather, temperature, or forecast.
+         
+         Jarvis gives a fictional weather report.
+         
+         Time
+         
+         Ask for the time, clock, or hour.
+         
+         Jarvis shows the current system time.
+         
+         Quotes
+         
+         Request a quote, inspire, or motivation.
+         
+         Jarvis shares an inspirational quote.
+         
+         Color Theme
+         
+         Type color or change color.
+         
+         Jarvis changes the chat color theme.
+         
+         Help
+         
+         Type help to see all available commands in a table.
+         
+         Exit
+         
+         Say bye or exit to end the conversation.
 
 Jarvis shows a summary and conversation history (optional).
 
