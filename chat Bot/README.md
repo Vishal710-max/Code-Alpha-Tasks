@@ -26,82 +26,79 @@ Usage Overview
    When you run the script you'll see a welcome banner and can start chatting with Jarvis.
    Here are the main commands you can use:
 
-         Greetings
+      Greetings
          
          Say hello, hi, or hey to start the conversation.
          
-         Jarvis responds with a friendly greeting.
+      Jarvis responds with a friendly greeting.
          
          Ask How Jarvis Is
          
-         Type how are you or similar phrases.
+      Type how are you or similar phrases.
          
          Jarvis replies with cheerful responses.
          
-         Jokes
+      Jokes
          
          Ask for a joke or something funny.
          
          Jarvis tells a random joke.
          
-         Weather
+      Weather
          
          Ask about the weather, temperature, or forecast.
          
          Jarvis gives a fictional weather report.
          
-         Time
+      Time
          
          Ask for the time, clock, or hour.
          
          Jarvis shows the current system time.
          
-         Quotes
+      Quotes
          
          Request a quote, inspire, or motivation.
          
          Jarvis shares an inspirational quote.
          
-         Color Theme
+      Color Theme
          
          Type color or change color.
          
          Jarvis changes the chat color theme.
          
-         Help
+      Help
          
          Type help to see all available commands in a table.
          
-         Exit
+      Exit
          
          Say bye or exit to end the conversation.
 
 Jarvis shows a summary and conversation history (optional).
 
 Notes & Tips
-For best visuals, ensure you have the rich library installed:
+   For best visuals, ensure you have the rich library installed:
 
-bash
-pip install rich
-Jarvis BOT handles unknown inputs gracefully by suggesting available commands.
+
+pip install rich :
+      Jarvis BOT handles unknown inputs gracefully by suggesting available commands.
 
 Conversation history is displayed at the end of the session if you choose to view it.
 
 Troubleshooting
-ImportError: rich not installed  
-Install it with: pip install rich
+      ImportError: rich not installed  
+      Install it with: pip install rich
 
 KeyboardInterrupt  
-If you press Ctrl+C, the chatbot will exit gracefully.
+      If you press Ctrl+C, the chatbot will exit gracefully.
 
 Other errors  
-The script catches exceptions and continues the chat session.
+      The script catches exceptions and continues the chat session.
 
 Contributing
-Improvements, new features, or UX tweaks are welcome. Please open an issue or submit a pull request with a clear description of the change.
-
-License
-MIT — feel free to use and adapt this chatbot for your own needs.
+      Improvements, new features, or UX tweaks are welcome. Please open an issue or submit a pull request with a clear             description of the change.
 
 Author / Contact
 Created by Vishal710-max (as part of Code-Alpha-Tasks)
